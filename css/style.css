@@ -1,0 +1,260 @@
+:root {
+	--e-global-color-vamtam_accent_1: #010ed0;
+	--e-global-color-vamtam_accent_2: #f5f5f5;
+	--e-global-color-vamtam_accent_3: #5f6567;
+	--e-global-color-vamtam_accent_4: #dee0ff;
+	--e-global-color-vamtam_accent_5: #ffffff;
+	--e-global-color-vamtam_accent_6: #242627;
+	--e-global-color-vamtam_accent_7: rgba(0, 0, 0, 0.149);
+	--e-global-color-vamtam_accent_8: rgba(0, 0, 0, 0.6);
+	--e-global-color-vamtam_sticky_header_bg_color: #010ed0;
+	--e-global-color-a9cf77f: #0a0d31;
+	--e-global-color-8a42445: rgba(245, 245, 241, 0.702);
+	--color-white: #fff;
+
+	--transition: all 0.5s ease;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: 0;
+	border: 0;
+}
+body {
+	font-size: 0.9rem;
+	color: var(--e-global-color-vamtam_accent_3);
+	font-family: 'Poppins', sans-serif;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+h2 {
+	font-size: 2.5rem;
+	color: var(--e-global-color-a9cf77f);
+}
+
+/* --- Reusable CSS --- */
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.section {
+	padding: 5rem 0;
+}
+
+.grid-column-two {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.grid-column-three {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+/* --- Header section --- */
+/* header {
+	border-bottom: 1px solid rgb(211 211 211 / 91%);
+
+} */
+.header-main-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 5rem;
+	/* border-bottom: 1px solid rgb(211 211 211 / 91%); */
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+.header-contact-info {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+}
+.logo {
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: var(--e-global-color-vamtam_accent_1);
+}
+
+nav ul li a {
+	font-size: 1rem;
+	color: var(--e-global-color-vamtam_accent_3);
+	font-weight: 500;
+	transition: var(--transition);
+	padding: 1.8rem 0;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+nav ul li a i {
+	font-size: 0.6rem;
+}
+nav ul li a:hover {
+	color: var(--e-global-color-vamtam_accent_1);
+}
+
+.client-support {
+	background-color: var(--e-global-color-vamtam_accent_2);
+	padding: 0.1rem 1rem;
+	margin-bottom: 0.2rem;
+	color: var(--e-global-color-vamtam_accent_3);
+	font-size: 0.7rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	font-weight: 500;
+	border-radius: 0.3rem;
+}
+
+.cutomer-srvc {
+	color: var(--e-global-color-vamtam_accent_3);
+}
+.contact-from {
+	background: var(--e-global-color-vamtam_accent_1);
+	color: var(--color-white);
+	padding: 0.8rem 1.2rem;
+	border-radius: 0.3rem;
+}
+.main-links {
+	position: relative;
+}
+
+.sub-links-container {
+	position: absolute;
+	top: 80px;
+	left: -200px;
+	width: 800px;
+	height: auto;
+	padding: 2rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	/* gap: 5rem; */
+	visibility: hidden;
+	transform: scale(1, 0);
+	transform-origin: 0 0;
+	opacity: 0;
+	/* box-shadow: 0 5px 3px rgb(0 0 0 / 12%); */
+	border: 1px solid rgb(0 0 0 / 12%);
+	transition: all 0.3s ease;
+	z-index: 50;
+}
+
+.main-links:hover .sub-links-container {
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1);
+}
+
+nav ul .header-services-links ul {
+	display: block;
+}
+nav ul .header-services-links ul li {
+	margin-bottom: 0.8rem;
+}
+nav ul .header-services-links ul li a {
+	font-size: 0.9rem;
+	padding: 0;
+}
+.header-services-links h4 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: var(--e-global-color-vamtam_accent_6);
+	margin-bottom: 0.8rem;
+}
+.header-services-links2 h4 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: var(--e-global-color-a9cf77f);
+	margin-bottom: 0.8rem;
+}
+.header-services-links2 .grid-column-two {
+	gap: 2rem;
+}
+
+.business-challenges-box {
+	display: block;
+	border: 1px solid var(--e-global-color-vamtam_accent_4);
+	padding: 1.5rem 1rem;
+	border-radius: 0.3rem;
+}
+.business-challenges-box:hover {
+	border-color: var(--e-global-color-vamtam_accent_1);
+}
+.business-challenges-box span {
+	display: block;
+	margin-bottom: 0.8rem;
+}
+
+.business-challenges-box span i {
+	font-size: 1.5rem;
+	color: var(--e-global-color-vamtam_accent_1);
+}
+.business-challenges-box h5 {
+	font-size: 0.8rem;
+	font-weight: 500;
+}
+
+.header-services-links2 ul {
+	display: block;
+}
+
+.company-links .sub-links-container {
+	left: -510px;
+	width: 1200px;
+	padding: 0;
+}
+.header-services-links2 ul li a {
+	padding: 0;
+}
+.company-links .header-services-links h4 {
+	max-width: 250px;
+}
+
+.width-header-heading {
+	width: 45%;
+	padding: 2rem;
+}
+
+.width-header {
+	width: 30%;
+	padding: 2rem 0rem;
+}
+
+.company-links .other-links ul li a {
+	font-size: 0.9rem;
+}
+.company-links .other-links ul li {
+	margin-bottom: 0.8rem;
+}
+
+.link-bg {
+	background: var(--e-global-color-vamtam_accent_2);
+	padding: 2rem;
+}
+
+.link-bg ul li {
+	color: var(--e-global-color-vamtam_accent_3);
+	margin-bottom: 0.8rem;
+	font-weight: 500;
+	font-size: 0.9rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+.link-bg ul li img {
+	width: 25px;
+}
