@@ -10,9 +10,24 @@
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+
 		<script
 			src="https://kit.fontawesome.com/e088578515.js"
 			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+		<script
+			type="text/javascript"
+			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
 		></script>
 	</head>
 	<body>
@@ -245,7 +260,7 @@
 		<!-- Services Section -->
 		<section class="section service-sec">
 			<div class="container">
-				<h5 class="sub-heading">HOW WE DO</h5>
+				<h5 class="sub-heading2">HOW WE DO</h5>
 				<h2>Services</h2>
 				<div class="grid-column-three">
 					<div class="services-card">
@@ -287,11 +302,10 @@
 						<div class="srvc-image">
 							<img src="./img/srvc4.png" alt="Services image" />
 						</div>
-						<a href="#" class="srvc-heading">Cyber Security</a>
+						<a href="#" class="srvc-heading"> Web Development </a>
 						<p>
-							Our experts can identify vulnerabilities, assess risks, and
-							implement robust security measures to safeguard your systems and
-							data.
+							Our web development services can help you establish an impactful
+							online presence and reach your target audience effectively.
 						</p>
 						<a href="#" class="btn">Learn More</a>
 					</div>
@@ -299,11 +313,10 @@
 						<div class="srvc-image">
 							<img src="./img/srvc5.png" alt="Services image" />
 						</div>
-						<a href="#" class="srvc-heading">Cyber Security</a>
+						<a href="#" class="srvc-heading"> Mobile Development </a>
 						<p>
-							Our experts can identify vulnerabilities, assess risks, and
-							implement robust security measures to safeguard your systems and
-							data.
+							We can help you create a customized mobile app that aligns with
+							your brand and goals, with expertise in various mobile platforms.
 						</p>
 						<a href="#" class="btn">Learn More</a>
 					</div>
@@ -311,19 +324,213 @@
 						<div class="srvc-image">
 							<img src="./img/srvc6.png" alt="Services image" />
 						</div>
-						<a href="#" class="srvc-heading">Cyber Security</a>
+						<a href="#" class="srvc-heading"> Cloud Services </a>
 						<p>
-							Our experts can identify vulnerabilities, assess risks, and
-							implement robust security measures to safeguard your systems and
-							data.
+							With our expertise in cloud technologies, we can help you find the
+							right cloud solutions that meet your business needs and goals.
 						</p>
 						<a href="#" class="btn">Learn More</a>
 					</div>
 				</div>
-				<div><a href="#" class="btn btn-about">About VibeVital</a></div>
+				<div><a href="#" class="btn btn-about">View All Services</a></div>
 			</div>
 		</section>
 
+		<!-- Services Solution Section -->
+		<section class="section-pad srvc-solution-sec">
+			<div class="srvc-solution-container">
+				<div class="srvc-solution-content">
+					<h5 class="sub-heading2">HOW WE DO</h5>
+					<h2>Solving IT challenges in every industry, every day.</h2>
+					<p>
+						"Addressing IT hurdles across diverse industries daily, our
+						expertise spans UI/UX design, HTML, CSS, JavaScript, ReactJS,
+						Next.js, and Node.js. Seamlessly integrating these technologies, we
+						streamline user experiences, enhance functionality, and optimize
+						performance. From e-commerce to healthcare, our solutions
+						revolutionize digital landscapes, ensuring businesses thrive in the
+						ever-evolving tech ecosystem. With a relentless commitment to
+						innovation, we empower organizations to conquer IT challenges,
+						driving success in today's competitive markets."
+					</p>
+					<a href="#" class="btn">View All Industries</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Success Story Section -->
+		<section class="section-pad success-sec">
+			<div class="container">
+				<div class="success-conatiner">
+					<h5 class="sub-heading2">WHERE WE DO</h5>
+					<h2>Success Stories</h2>
+					<div class="grid-column-three">
+						<div class="success-card">
+							<div class="success-image">
+								<a href="#"
+									><img src="./img/Insurance.webp" alt="Case Syudy"
+								/></a>
+							</div>
+							<a href="#" class="company-type-link">CLOUD HOSTING</a>
+							<a href="#" class="company-info-link">
+								Major Insurance Provider Saves $750k per Month With Big Data
+								Migration</a
+							>
+							<p>
+								The company needed to complete a complex migration on a tight
+								deadline to avoid millions of dollars in post-contract fees and
+								fines
+							</p>
+							<ul>
+								<li>✔︎ Modern infrastructure</li>
+								<li>✔︎ Consulting services</li>
+							</ul>
+							<a href="#" class="btn">Learn more</a>
+						</div>
+						<div class="success-card">
+							<div class="success-image">
+								<a href="#"
+									><img src="./img/nespresso.webp" alt="Case Syudy"
+								/></a>
+							</div>
+							<a href="#" class="company-type-link">IT CONSULTING</a>
+							<a href="#" class="company-info-link">
+								Maximizing Efficiency with Proper Technology Implementation –
+								Coffee Success Story</a
+							>
+							<p>
+								The company needed to complete a complex migration on a tight
+								deadline to avoid millions of dollars in post-contract fees and
+								fines
+							</p>
+							<ul>
+								<li>✔︎ Modern infrastructure</li>
+								<li>✔︎ Consulting services</li>
+							</ul>
+							<a href="#" class="btn">Learn more</a>
+						</div>
+
+						<div class="success-card">
+							<div class="success-image">
+								<a href="#"
+									><img src="./img/undergroup.webp" alt="Case Syudy"
+								/></a>
+							</div>
+							<a href="#" class="company-type-link">MOBILE DEVELOPMENT</a>
+							<a href="#" class="company-info-link">
+								Strategic Move to an AI-supported application for Public Safety
+								Travel App in London</a
+							>
+							<p>
+								The company needed to complete a complex migration on a tight
+								deadline to avoid millions of dollars in post-contract fees and
+								fines
+							</p>
+							<ul>
+								<li>✔︎ Modern infrastructure</li>
+								<li>✔︎ Consulting services</li>
+							</ul>
+							<a href="#" class="btn">Learn more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Testimonials Section -->
+		<section class="section-pad testimonials-sec">
+			<div class="container">
+				<h5 class="sub-heading2">Testimonials</h5>
+				<h2>What Clients Say</h2>
+				<div class="testimonials-slider">
+					<div class="slider-box">
+						<div class="slider-content-box">
+							<div class="slider-image">
+								<img src="./img/Insurance.webp" alt="Testimonials Image" />
+							</div>
+							<p>
+								Tecnologia implemented such a powerful platform that we had no
+								break in service when our employees had to work from home due to
+								the COVID-19 pandemic. We weren’t concerned about how to shift
+								to a remote working environment because Integris facilitated a
+								seamless transition.
+							</p>
+							<span
+								><i class="fa-solid fa-star" aria-hidden="true"></i
+								><i class="fa-solid fa-star" aria-hidden="true"></i
+								><i class="fa-solid fa-star" aria-hidden="true"></i
+								><i class="fa-solid fa-star" aria-hidden="true"></i
+								><i class="fa-solid fa-star" aria-hidden="true"></i
+							></span>
+							<div class="shape"></div>
+						</div>
+						<div class="client-info">
+							<h4>Amanda Parks</h4>
+							<span>Network Manager, Healthcare Organization</span>
+						</div>
+					</div>
+					<div class="slider-box">
+						<div class="slider-content-box">
+							<div class="slider-image">
+								<img src="./img/nespresso.webp" alt="Testimonials Image" />
+							</div>
+							<p>
+								Tecnologia has been an outstanding partner. Their team is
+								professional, knowledgeable and customer-service driven.
+								Tecnologia proactive collaborative approach has been critical in
+								helping us build an IT infrastructure that enables our success
+								today and supports our long-term positioning strategy.
+							</p>
+							<span
+								><i class="fa-solid fa-star" aria-hidden="true"></i
+								><i class="fa-solid fa-star" aria-hidden="true"></i
+								><i class="fa-solid fa-star" aria-hidden="true"></i
+								><i class="fa-solid fa-star" aria-hidden="true"></i
+								><i class="fa-solid fa-star" aria-hidden="true"></i
+							></span>
+							<div class="shape"></div>
+						</div>
+						<div class="client-info">
+							<h4>John Labkins</h4>
+							<span>Partner & CEO, Telecommunication Company</span>
+						</div>
+					</div>
+					<div class="slider-box">
+						<div class="slider-content-box">
+							<div class="slider-image">
+								<img src="./img/undergroup.webp" alt="Testimonials Image" />
+							</div>
+							<p>
+								I’ve been a customer for more than a decade. Tecnologia is an
+								example of the way Managed Services should be done. They do
+								their very best to make sure you succeed. If there’s an issue,
+								they step in immediately. We will continue to be a customer for
+								years to come.
+							</p>
+							<span
+								><i class="fa-solid fa-star" aria-hidden="true"></i
+								><i class="fa-solid fa-star" aria-hidden="true"></i
+								><i class="fa-solid fa-star" aria-hidden="true"></i
+								><i class="fa-solid fa-star" aria-hidden="true"></i
+								><i class="fa-solid fa-star" aria-hidden="true"></i
+							></span>
+							<div class="shape"></div>
+						</div>
+						<div class="client-info">
+							<h4>Daniel Legrante</h4>
+							<span>CIO, Restaurant Product Supplier</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section class="section conatct-sec">
+			<div class="container">
+				<h1>adsaffsdfsdfsdf</h1>
+			</div>
+		</section>
 		<script src="js/script.js"></script>
 	</body>
 </html>
